@@ -1,0 +1,21 @@
+<script>
+    // Pedro tem 1,50m de altura e cresce 2 centímetros por ano, enquanto
+// Lucas tem 1,10m de altura e cresce 3 centímetros por ano.
+// Construa um algoritmo que calcule e imprima quantos anos serão
+// necessários para que:
+// a. Lucas e Pedro tenham o mesmo tamanho;
+// b. Lucas seja maior que Pedro.
+
+let altPedro = 1.5
+let altLucas = 1.1
+let anos = 0
+
+while (altPedro >= altLucas) {
+    altPedro += 0.02
+    altLucas += 0.03
+    anos += 1
+}
+
+document.write(`Lucas e Pedro alcançaram o mesmo tamanho em ${anos - 1} anos! <br/>`);
+document.write(`Lucas será maior que Pedro em ${anos} anos! <br/>`);
+</script>
